@@ -1,0 +1,12 @@
+.main_container{
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp');
+    height: 100vh;
+}
+
+h1{
+    font-size:large
+}
+
+#header{
+    padding-top:80px;
+}
