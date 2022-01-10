@@ -18,6 +18,7 @@
 
         <link rel="stylesheet" href="css/contact-us.css">
         <link rel="stylesheet" href="css/imgCarousel.css">
+
     </head>
 
     <body>
@@ -60,40 +61,51 @@
         </nav>
 
         <!-- Rest of the body goes here -->
-        <div class="main_container">
 
-            <div id="imgCarousel" class="mx-auto w-50 carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container-fluid" id="main_container">
+            <div class="position-relative row py-3" id="header_row">
+                <div class="col-md">
+                    <div id="imgCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="img/img1.jpg" class="mx-auto w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/img2.jpg" class="mx-auto w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="img/img3.jpg" class="mx-auto w-100" alt="...">
+                            </div>
+                        </div>
+        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imgCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
-
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/img1.jpg" class="mx-auto d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/img2.jpg" class="mx-auto d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/img3.jpg" class="mx-auto d-block w-100" alt="...">
-                  </div>
+                <div class="col-md">
+                    <h1>Contact Us!</h1>
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imgCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
-            <div id="header">
-                <h1>Something here</h1>
+            <div class="row">
+                <div id="header">
+                    <h1>Something here</h1>
+                </div>
             </div>
         </div>
+
+
     </body>
 </html>

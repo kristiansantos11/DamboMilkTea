@@ -1,15 +1,22 @@
-.main_container{
-    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp');
-    height: 100vh;
+body {
+    background-color:white;
 }
 
-h1{
-    font-size:large
+#main_container{
+    padding-top:73px;
 }
 
-#header{
-    padding-top:100px;
-    text-align:center;
+#header_row{
+    background-color:#4eae52;
+    color: white;   
+}
+
+#header_row h1{
+    font-size: 6vw;
+    font-family: 'proxima_nova_bold';
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
 }
 
 button.navbar-toggler {
@@ -19,4 +26,20 @@ button.navbar-toggler {
 
 #shopping_cart{
     position:relative;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('/_fonts_/proxima_nova/proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('/_fonts_/proxima_nova/proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_bold';
+    src: url('/_fonts_/proxima_nova/proxima_nova_bold-webfont.woff2') format('woff2'),
+         url('/_fonts_/proxima_nova/proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
