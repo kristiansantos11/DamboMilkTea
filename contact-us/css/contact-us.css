@@ -8,5 +8,15 @@ h1{
 }
 
 #header{
-    padding-top:80px;
+    padding-top:100px;
+    text-align:center;
+}
+
+button.navbar-toggler {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#shopping_cart{
+    position:relative;
 }
