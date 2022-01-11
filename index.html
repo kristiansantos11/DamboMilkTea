@@ -25,6 +25,12 @@
       rel="stylesheet"
     />
 
+    <!--Icons - Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Dambo Milk Tea</title>
     <link rel="icon" href="home/img/webicon.ico" type="image/x-icon" />
 
@@ -63,24 +69,28 @@
             <a
               class="nav-link active"
               aria-current="page"
-              href=""
+              href="index.html"
               id="navbar-element"
               >Home</a
             >
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="/members" id="navbar-element">Menu</a>
+            <a class="nav-link" href="/menu/index.html" id="navbar-element"
+              >Menu</a
+            >
           </li>
           <li class="nav-item mx-2">
-            <a
-              class="nav-link"
-              href="http://iancraft.apexmc.co:8888/index.html"
-              id="navbar-element"
+            <a class="nav-link" href="/about-us/index.html" id="navbar-element"
               >About Us</a
             >
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#" id="navbar-element">Contact Us</a>
+            <a
+              class="nav-link"
+              href="/contact-us/index.html"
+              id="navbar-element"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </div>
@@ -94,10 +104,74 @@
     </nav>
 
     <!-- Rest of the body goes here -->
-    <div class="main-container">
-      <div id="content1">Content 1</div>
-      <div id="content2">Content 2</div>
-      <footer id="footer">Footer</footer>
+    <!--Main Content Section-->
+    <div id="content_container" class="container-fluid">
+      <div class="row vh-100 m-1 p-1.5">
+        <div class="col-lg-6 text-center">
+          <div class="header_container">
+            <h1 id="header_firstline">
+              <b>It's not just </b><span id="TEA">TEA</span>
+            </h1>
+            <h1 id="header_secondline">
+              <b>It's </b><span id="DAMBO">DAMBO'S</span>
+            </h1>
+            <h1 id="header_thirdline"><span id="MILKTEA">MILKTEA</span></h1>
+          </div>
+          <div class="details_container" id="paragraph_container">
+            <p id="details_paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecatcupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <!--LEARN MORE BUTTON-->
+          <div class="action_button_container">
+            <a href="/about-us/index.html"
+              ><button id="learn_more_button" class="btn-success">
+                LEARN MORE
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 text-center bg-secondary">Content 2</div>
+      </div>
     </div>
+
+    <!--Footer Section-->
+    <footer>
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col text-center">
+            <div class="row">
+              <div class="col-lg m-3"><a href="/index.html"><img id="footer_icon" src="/home/img/icon.jpg" alt=""></a></div>
+              <div id="footer_center" class="col-lg m-3">&#169 2022 Dambo. All Rights Reserved.</div>
+              <div class="col-lg m-3">
+                <div id="icon_container">
+                  <a href="/" class="social_icons--link" target="_blank">
+                    <i class="fa fa-facebook-official"></i>
+                  </a>
+                  <a href="/" class="social_icons--link" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  <a href="/" class="social_icons--link" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="/" class="social_icons--link" target="_blank">
+                    <i class="fa fa-youtube-play"></i>
+                  </a>
+                  <a href="/" class="social_icons--link" target="_blank">
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
