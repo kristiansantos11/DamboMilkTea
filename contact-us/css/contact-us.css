@@ -2,6 +2,10 @@ body {
     background-color:white;
 }
 
+textarea{
+    resize: none;
+}
+
 #main_container{
     padding-top:73px;
 }
@@ -47,6 +51,19 @@ body {
     width: 128px;
 }
 
+#email{
+    text-align: center;
+    font-family: 'proxima_nova';
+    margin-top: 50px;
+}
+
+#feedback{
+    text-align: center;
+    font-family: 'proxima_nova';
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
 button.navbar-toggler {
     padding: 10px;
     margin-right: 10px;
@@ -54,6 +71,14 @@ button.navbar-toggler {
 
 #shopping_cart{
     position:relative;
+}
+
+#footer{
+    background-color: white;
+}
+
+#icon_container{
+    font-family: 'proxima_nova';
 }
 
 .material-icons.md-48 { font-size: 128px; }
