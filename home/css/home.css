@@ -1,90 +1,203 @@
 body {
-  font-family: "Proxima Nova", sans-serif;
+  padding-top: 5rem;
 }
 
-#content_container {
-  padding-top: 80px;
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/*Conten 1*/
-/*Header part*/
+/*Content 1 part*/
 
-.header_container {
+.backgroundimg_container {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("/Photoshop Files/src_images/anastasiia-chepinska-lcfH0p6emhw-unsplash.jpg");
+  height: auto;
+  background-size: cover;
+}
+
+#content1_header_line1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.625rem;
+}
+
+#content1_header_line2,
+#content1_header_line3,
+#content1_header_line4 {
+  font-weight: 800;
+  font-size: 7.5rem;
+  line-height: 6.25rem;
+  color: #ffff;
+}
+
+.header_container1 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#content1_img_container {
+  padding-left: -5rem;
+  padding-top: 5rem;
+}
+
+#content1_img {
+  width: fit-content;
+  height: 28rem;
+}
+/*Content 2 part*/
+.content2_container {
+  background-color: #f0ff47;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content2_header {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+/*Content 3 part*/
+#content3_main_container {
+  background-color: #339e3d;
+}
+
+.content3_header_container {
+  padding-top: 1rem;
+  padding-left: 5rem;
+}
+
+#content3_header {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 78px;
+  color: #fff;
+}
+
+#content3_details {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: #fff;
+}
+
+#content3_img1_container,
+#content3_img2_container,
+#content3_img3_container,
+#content3_img4_container {
+  border-radius: 1.938rem;
+  width: 268px;
+  height: 197px;
+  margin: 0;
+  padding: 0;
+}
+
+#content3_img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 31px;
+}
+
+#content3_img:hover {
+  transform: scale(1.1);
+}
+
+/*Content 4 part*/
+
+.content4_left_container {
+  padding-left: 5rem;
+  padding-top: 7.75rem;
+}
+
+.content4_header_container1 {
   width: fit-content;
 }
 
-#header_firstline {
-  margin-top: 2rem;
-  text-align: start;
-  font-size: 4rem;
+#content4_header_line1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+#content4_header_line2 {
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 
-#header_secondline {
-  text-align: start;
-  font-size: 4rem;
+#content4_header_line3 {
+  font-weight: bold;
+  font-size: 6.5rem;
+  color: #339e3d;
+  line-height: 6rem;
 }
 
-#header_thirdline {
-  text-align: start;
-}
-
-/*span element*/
-#TEA {
-  font-style: bold;
-  font-weight: 700;
-}
-
-/*span element*/
 #DAMBO {
-  font-weight: 700;
-  font-size: 96px;
   color: #339e3d;
+  font-size: 6.5rem;
 }
 
-/*span element*/
-#MILKTEA {
-  font-weight: 700;
-  font-size: 96px;
-  color: #339e3d;
+.content4_details_container1 {
+  width: fit-content;
+  margin-top: 4.1rem;
 }
 
-h1 {
-  line-height: 0.8;
+#content4_details_line1,
+#content4_details_line2,
+#content4_details_line3 {
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 42px;
 }
 
-/*Details part*/
-
-.details_container {
-  width: 32rem;
+.content4_details_container2 {
+  margin-top: 2.375rem;
 }
 
-#details_paragraph {
-  margin-top: 4rem;
-  text-align: justify;
-  font-size: 1.125rem;
-}
-
-.action_button_container {
-  margin-top: 3rem;
-  align-content: flex-start;
-  text-align: start;
+.learn_more_button_container {
+  width: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
 }
 
 #learn_more_button {
-  border-radius: 20px;
-  outline: none;
+  background-color: #339e3d;
+  color: #fff;
   border: none;
-  padding: 3px 10px 3px 10px;
+  outline: none;
+  border-radius: 1.5rem;
 }
 
+/*learn more button fx*/
 #learn_more_button:hover {
   background-color: #c18224;
-  transition: all 0.3s ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
-/*Content 2*/
+#content4_right_container {
+  height: fit-content;
+}
 
-/*Footer*/
+.content4_img_container {
+  padding-top: 4rem;
+}
+
+#content4_img {
+  width: fit-content;
+  height: fit-content;
+}
+
+#content4_img:hover {
+  transform: scale(1.1);
+}
+
+/*Footer part*/
 footer {
   background-color: #f5f5f5f5;
 }
@@ -94,8 +207,6 @@ footer {
   background-clip: inherit;
 }
 
-/*di ko alam kung bakit pero kapag walang naka-set na height sa icon_container ayaw ma-center ng mga nasa loob
-siguro dahil yon sa display flex?*/
 #icon_container {
   display: flex;
   justify-content: space-evenly;
@@ -122,29 +233,118 @@ siguro dahil yon sa display flex?*/
 }
 
 /*for Responsiveness*/
-@media screen and (max-width: 510px) {
-  #header_firstline {
-    font-size: 3.5rem;
+
+@media screen and (max-width: 768px) {
+  .header_container1 {
+    padding-left: 0.5rem;
   }
 
-  #header_secondline {
-    font-size: 3.5rem;
+  #content1_header_line1 {
+    font-size: 2rem;
+    padding-right: 2rem;
+    line-height: 1rem;
   }
 
-  #header_thirdline {
-    font-size: 3.5rem;
-  }
-
-  #DAMBO,
-  #MILKTEA {
+  #content1_header_line2,
+  #content1_header_line3,
+  #content1_header_line4 {
     font-size: 4rem;
+    padding-right: 2rem;
+    line-height: 4rem;
   }
 
-  .details_container {
-    width: 24rem;
+  #content1_img_container {
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
   }
 
-  #details_paragraph {
-    font-size: 0.8rem;
+  .content2_container {
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #content2_header {
+    font-size: 1.1rem;
+  }
+
+  .content3_header_container {
+    align-items: center;
+    align-content: center;
+  }
+
+  #content3_header {
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 5rem;
+    line-height: 2rem;
+  }
+
+  #content3_details {
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 5rem;
+    line-height: 1rem;
+  }
+
+  #content3_img1_container,
+  #content3_img2_container,
+  #content3_img3_container,
+  #content3_img4_container {
+    margin: 1rem;
+  }
+
+  .content4_left_container {
+    padding-top: 4rem;
+    padding-left: 2rem;
+  }
+
+  #content4_header_line1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  #content4_header_line2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  #DAMBO {
+    color: #339e3d;
+    font-size: 4.5rem;
+  }
+
+  #content4_header_line3 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: #339e3d;
+    line-height: 3rem;
+  }
+
+  .content4_details_container1 {
+    width: fit-content;
+    margin-top: 2.5rem;
+  }
+
+  #content4_details_line1,
+  #content4_details_line2,
+  #content4_details_line3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 42px;
+  }
+
+  .content4_img_container {
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+  }
+
+  .learn_more_button_container {
+    padding-bottom: 3rem;
+  }
+
+  #footer_container {
+    justify-content: center;
   }
 }
