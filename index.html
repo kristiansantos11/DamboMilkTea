@@ -35,6 +35,8 @@
     <link rel="icon" href="home/img/webicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="home/css/home.css" />
+
+    
   </head>
 
   <body>
@@ -102,14 +104,14 @@
 
     <!-- Rest of the body goes here -->
     <!--Main Content Section-->
-    <div class="container-fluid overflow-hidden">
+    <div id="root_container" class="container-fluid overflow-hidden">
       <div class="row">
         <div class="col">
           <div class="backgroundimg_container">
             <div class="container-fluid">
               <!--Content 1-->
               <div class="row">
-                <div class="col-lg-6 text-end">
+                <div class="col-lg-6 text-end pe-0">
                   <!--content 1 header-left-->
                   <div class="header_container1">
                     <h1 id="content1_header_line1">now available</h1>
@@ -120,7 +122,7 @@
                 </div>
                 <div
                   id="content1_img_container"
-                  class="col-lg-6 text-start py-5"
+                  class="col-lg-6 text-start py-5 ps-0"
                 >
                   <img
                     id="content1_img"
@@ -152,7 +154,7 @@
                 Enjoy your day with your DAMBO favorites!
               </p>
             </div>
-            <div class="row justify-content-evenly gap-2 pb-5">
+            <div id="content3_main_img_container" class="row pb-5">
               <div id="content3_img1_container" class="col-2 bg-secondary">
                 <a href=""
                   ><img id="content3_img" src="Photoshop Files/src_images/pineapple.jpg" alt="Milktea"
@@ -175,10 +177,10 @@
               </div>
             </div>
           </div>
-          <div id="content4_main_container" class="container-fluid">
+          <div id="content4_main_container" class="container-lg">
             <!--Content 4-->
             <div class="row">
-              <div class="col-lg-6">
+              <div id="content4_main_left_container" class="col-lg-6">
                 <!--Content 4 left-->
                 <div class="content4_left_container">
                   <div class="content4_header_container1">
@@ -200,7 +202,6 @@
                       Order 3 and get 1 <span id="FOR_FREE">FOR FREE!</span>
                     </h2>
                   </div>
-                  <!--Learn more button-->
                   <div class="learn_more_button_container">
                     <a href="/index.html"
                       ><button id="learn_more_button">LEARN MORE</button></a
@@ -213,7 +214,7 @@
                 <div class="content4_img_container">
                   <img
                     id="content4_img"
-                    class="img-fluid"
+                    class=""
                     src="/Photoshop Files/src_images/dambo_foreground_milktea_picture_EDITED.png"
                     alt=""
                   />
