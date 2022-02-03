@@ -1,18 +1,10 @@
-
-
-body{
-}
-
 #main_container{
     padding-top:66px;
     background-color: beige;
-
 }
 
 #sub_container{
     background-color: #4BB050;
-
-
 }
 
 #milktea img{
@@ -26,38 +18,132 @@ body{
 #context{
     font-family: 'proxima_nova';
     color:white;
-    padding-left: 30px;
+    padding-left: 75px;
     margin: auto;
 }
 
 #context h1{
     font-family: 'proxima_nova_xbold';
     font-size: 80px;
-    color:white;
+    color:beige;
     margin: auto;
 }
 
 #context p{
     font-size: 25px;
-}
+    color:beige;
 
+}
 
 
 #mt-ab{
     width: 40%;
-    display: block;
     margin: auto;
 }
 
 #mt-ab img{
-    width: auto;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     min-height: 453px;
     max-height: 453px;
     object-fit: contain;
     margin: auto;
     display: block;
 }
+
+#map{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: beige;
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    background: beige;
+
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+#map h1{
+    text-align: right;
+    color: #4BB050;
+    font-size: 80px;
+    font-family: 'proxima_nova_xbold';
+    padding-top: 30px;
+}
+
+#map p{
+    text-align: right;
+    color: #4BB050;
+    font-size: 25px;
+}
+
+#map small{
+    font-size: 18px;
+}
+
+
+#testimony{
+    background-color: #4BB050;
+}
+
+#testimony h1{
+    text-align: center;
+    color: beige;
+    font-size: 80px;
+    font-family: 'proxima_nova_xbold';
+}
+
+#testimony p{
+    text-align: center;
+    color: beige;
+    font-size: 25px;
+}
+
+#location-ab img{
+    width: fit-content;
+    height: fit-content;
+    min-height: 650px;
+    max-height: 650px;
+    object-fit: contain;
+    background-size: cover;
+}
+#sub-testimony{
+    padding-top: 50px;
+    padding-bottom: 170px;
+
+}
+
+#test-a img{
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    max-height: 450px;
+    object-fit: contain;
+    margin: auto;
+    padding-top: 25px;
+}
+
+
+#test-b img{
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    max-height: 450px;
+    object-fit: contain;
+    margin: auto;
+    padding-top: 25px;
+
+
+}
+
+
 
 
 @font-face {
