@@ -69,31 +69,54 @@
                     </div>
                     <div class="col">
                     <h1>Here's the list of your order!</h1>
-                    <h2>You have 3 items in your order.</h2>
+                    <h2>You have 2 items in your order.</h2>
+                    </div>
+                    <div class="col"> 
+                        <button id="manage-button" >Manage</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid" id="manage_button_container">
-            <div class="row">
-                <div class="col"> 
-                <button id="manage-button" >Manage</button>
-            </div>
-        </div>
-        </div>
+        
+        
         <div class="container-fluid" id="order_contents1">
             <div class="row">
-                <div class="col-auto">
-
-
+                <div class="col-sm-2">
+                     <img class="img-fluid mx-auto" id="img_container1" src="img/avocado_img1.jpg">
+                </div>
+                <div class="col-5" id="avocado_order">
+                    <h1> Avocado Milk Tea </h1>
+                    <p> Description goes here... </p>
+                </div>
+                
+                <div class="col">
+                    
+                    <button id="add-button" onclick="increment()">+</button>
+                    <input id=math_blank type=number min=0 max=100></input>
+                    <button id="minus-button" onclick="decrement()">-</button>
+                    <script>
+                        function increment() {
+                           document.getElementById('math_blank').stepUp();
+                        }
+                        function decrement() {
+                           document.getElementById('math_blank').stepDown();
+                        }
+                     </script>
                 </div>
             </div>
         </div>
         <div class="container-fluid" id="order_contents2">
             <div class="row">
-                <div class="col-auto">
-
-
+                <div class="col">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="checkout_button_container">
+            <div class="row">
+                    <div class="col"><a href="#CHECKOUT_LINK" class="btn btn-secondary btn-lg" id="checkout-button">CHECKOUT</a>
+            </div>
                 </div>
             </div>
         </div>

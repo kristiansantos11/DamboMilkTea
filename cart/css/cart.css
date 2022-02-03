@@ -9,7 +9,9 @@
     padding-top: 100px;
     padding-left: 25px;
     max-width: 100%;
-    
+    margin-bottom: 1%;
+    margin-left: 8%;
+    margin-right: 10%;
 }
 #listicon1{
     max-height: 100px;
@@ -25,50 +27,122 @@
     font-size: 40px;
     color:black;  
 }
-.manage_button_container{
-  width:fit-content;
-  height:fit-content;
-  
-}
 
 #manage-button{
-  background-color: #38753A;
-  color: #fff;
-  border: 20%;
-  border-radius: 1rem;
-  border-color: #38753A;
-  position: absolute;
-  right: 150px;
-  bottom: 675px;
-  font-size: 25px;
+    background-color: #38753A;
+    color: #fff;
+    border: 20%;
+    border-radius: 1rem;
+    border-color: #38753A;
+    font-size: 28px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+    margin-top: 50px;
+    margin-left: 85%;
 }
 #manage-button:hover{
     background-color: #0b5813;
     transition: 0.5s;
 }
 
+#checkout_button_container{
+    width:fit-content;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+}
+#checkout-button{
+    background-color: #38753A;
+    border: 20%;
+    border-radius: 1rem;
+    font-size: 25px;
+    
+}
+    
+#checkout-button:hover{
+    background-color: #0b5813;
+    transition: 0.5s;
+}
+
 #order_contents1{
     background-color: #4CB050;
-    position:absolute;
-    bottom: 500px;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-left: 25px;
-    
-    max-width: 100%;
-    border-radius: 1rem;
+    margin-bottom: 30px;
+    max-width: 80%;
+    border-radius: 2rem;
 }
 
+#img_container1{
+    max-width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 1rem;
+    display: flex;
+}
 #order_contents2{
     background-color: #4CB050;
-    position:absolute;
-    bottom: 300px;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-left: 25px;
-    
-    max-width: 100%;
-    border-radius: 1rem;
+    margin-bottom: 50px;
+    max-width: 80%;
+    border-radius: 2rem;
 }
-
+#avocado_order h1{
+    font-family: 'proxima_nova_bold';
+    font-size: 50px;
+    color:white;
+    margin-top: 15%;
+    margin-right: 30%;
+    display: flex;
+}
+#avocado_order p{
+    font-family: 'proxima_nova';
+    font-size: 30px;
+    color:white;
+    margin-top: 1px;
+    margin-right: 30%;
+    display: flex;
+}
+#add-button{
+    background-color: #38753A;
+    color: #fff;
+    border: 20%;
+    border-radius: 1rem;
+    border-color: #38753A;
+    font-size: 30px;
+    font-family: 'proxima_nova_xbold';
+    width: 50px;
+    max-height: 30%;
+    text-align: center;
+    
+    
+}
+#minus-button{
+    background-color: #38753A;
+    color: #fff;
+    border: 20%;
+    border-radius: 1rem;
+    border-color: #38753A;
+    font-size: 30px;
+    font-family: 'proxima_nova_xbold';
+    width: 50px;
+    max-height: 30%;
+    text-align: center;
+    
+}
+#math_blank{
+    width: 20%;
+    height: 16%;
+    margin-top: 22%;
+    border:none;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'proxima_nova_bold';
+    padding-left: 3%;
+}
 
 @font-face {
     font-family: 'proxima_nova';
