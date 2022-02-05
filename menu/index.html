@@ -61,17 +61,47 @@
         <!-- Rest of the body goes here -->
         <div class="container-fluid" id="main_container">
                 <div class="menu">
+                
                 <div class="menu_title">
-                        <h1>CHOOOSE FROM OUR DELICIOUS DRINKS</h1>  
+                        <h1>Choose from our delicious drinks</h1>  
                     </div>
                 <div class="menu_board">
-                    <div class="part1">hahpakyua</div>
-                    <div class="part2">hahaha</div>
-                    <div class="part3">ahaha</div>
+                    <div class="part1">
+                        <p>Milktea</p>
+                        <ul class="milktea">
+                            <li><a href="#" onclick="imgSlider('/Photoshop Files/src_images/creamy_coffee_series_milktea_foreground.png')">Matcha</a></li>
+                            <li>Oreo Cheesecake</li>
+                            <li>Okinawa</li>
+                            <li>Rock Salt</li>
+                            <li>Wintermelon</li>
+                        </ul>
+                    </div>
+                    <div class="part2">
+                        <p>Frappe</p>
+                        <ul class="frappe">
+                            <li>Strawberry Cheesecake</li>
+                            <li>Oreo Cheesecake</li>
+                            <li>Matcha</li>
+                            <li>Choco Fudge</li>
+                            <li>Nutella</li>
+                        </ul>
+                    </div>
+                    <div class="part3">
+                    <div class="circle"></div>
+                    <div class="imgbox">
+                        <img src="/Photoshop Files/src_images/creamy_coffee_series_milktea_foreground_SOLO.png" class="dambo">
+                    </div>
+                    
+                </div>
                 </div>
                 </div>
                 </div>
         </div>
 
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.dambo').src = anything;
+            }
+        </script>
     </body>
 </html>
