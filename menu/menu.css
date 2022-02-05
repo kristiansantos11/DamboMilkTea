@@ -4,6 +4,17 @@
     max-height: 100%;
 }
 
+.part3 .circle {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#339e3d;
+    clip-path: circle(700px at right 900px);
+    z-index: -1;
+}
+
 .menu_title{
     padding-top: 100px;
     padding-left: 25px;
@@ -11,36 +22,82 @@
 }
 
 .menu_title h1{
-    font-size: 50px;
+    font-size: 75px;
     font-family: 'proxima_nova_bold';
+    z-index: 5;
 }
 
 .menu_board {
     max-width: 100%;
     max-height: 100%;
-    background-color: brown;
+
     display: flex;
 }
 
 .part1 {
-    background-color: cadetblue;
+ 
     margin-left: 25px;
     min-width: 25%;
     max-width: 25%;
     max-height: 100%;
 }
 
+.part1 p {
+    font-family: 'proxima_nova_bold';
+    font-size: 35px;
+    color: #339e3d;
+    z-index: 5;
+}
+
+
+
+li {
+
+    list-style: none;
+    position: relative;
+    margin-left: -30px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'proxima_nova';
+}
+
 .part2 {
-    background-color: cadetblue;
+
     min-width: 25%;
     max-width: 25%;
 
 }
 
+.part2 p {
+    margin-top: 250px;
+    font-family: 'proxima_nova_bold';
+    font-size: 35px;
+    color: #339e3d;
+}
+
 .part3 {
-    background-color:chocolate;
-    min-width: 50%;
-    max-width: 50%;
+
+    min-width: 60%;
+    max-width: 60%;
+    max-height: 100vh;
+}
+
+.part3 .imgbox { 
+    top: 0;
+    margin-top: 200px;
+    margin-left: 5rem;
+    height:70%;
+    width: inherit;
+    position: fixed;
+    z-index: -1;
+
+}
+
+.imgbox img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .material-icons.md-48 { font-size: 128px; }
 
