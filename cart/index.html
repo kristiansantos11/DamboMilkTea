@@ -61,35 +61,46 @@
 
         <!-- Rest of the body goes here -->
 
-        <div class="container-fluid" id="main_container">
+        <div class="container-fluid position-relative" id="main_container">
             <div class = "cart_layout">
                 <div class="row" id="cart_phrase">
                     <div class="col-auto">
-                        <img class="col" id="listicon1" src="img/listicon.png" >
+                        <img class="col position-relative" id="listicon1" src="img/listicon.png" >
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                     <h1>Here's the list of your order!</h1>
                     <h2>You have 2 items in your order.</h2>
                     </div>
-                    <div class="col"> 
-                        <button id="manage-button" >Manage</button>
+                    <div class="col position-relative">  
+                        <button id="manage-button" value='Show Layer' onclick="setVisibility('avocado_checkbox_style');";>Manage</button>
+                        <script>
+                            function setVisibility() {
+                            if(document.getElementById('manage-button').value=='Hide Layer'){
+                            document.getElementById('manage-button').value = 'Show Layer';
+                            document.getElementById('avocado_checkbox_style').style.display = 'none';
+                            }else{
+                            document.getElementById('manage-button').value = 'Hide Layer';
+                            document.getElementById('avocado_checkbox_style').style.display = 'block';
+                            }}
+                            
+                            </script>
                     </div>
                 </div>
             </div>
         </div>
         
         
-        <div class="container-fluid" id="order_contents1">
+        <div class="container-fluid position-relative" id="order_contents1">
             <div class="row">
-                <div class="col-sm-2">
-                     <img class="img-fluid mx-auto" id="img_container1" src="img/avocado_img1.jpg">
+                <div class="col-sm-2" id="img_container1">
+                     <img id="img_avocado" src="img/avocado_img1.jpg">
                 </div>
-                <div class="col-5" id="avocado_order">
+                <div class="col" id="avocado_order">
                     <h1> Avocado Milk Tea </h1>
-                    <p> Description goes here... </p>
+                    <p>Description goes here...</p>
                 </div>
                 
-                <div class="col">
+                <div class="col-sm-1" id="bg_for_mathbuttons">
                     
                     <button id="add-button" onclick="increment()">+</button>
                     <input id=math_blank type=number min=0 max=100></input>
@@ -103,12 +114,15 @@
                         }
                      </script>
                 </div>
+
+                <div class="col-sm-1" id="avocado_checkbox_content"> 
+                        <input type="checkbox" id="avocado_checkbox_style"/>
+                </div>
             </div>
         </div>
         <div class="container-fluid" id="order_contents2">
             <div class="row">
                 <div class="col">
-                    
                     
                 </div>
             </div>
@@ -116,9 +130,40 @@
         <div class="container-fluid" id="checkout_button_container">
             <div class="row">
                     <div class="col"><a href="#CHECKOUT_LINK" class="btn btn-secondary btn-lg" id="checkout-button">CHECKOUT</a>
-            </div>
-                </div>
+
+                    </div>
             </div>
         </div>
+        <footer>
+            <div id="footer_main_container" class="container-fluid p-5">
+              <div class="row"> 
+                <div class="col text-center">
+                  <div id="footer_container" class="row">
+                    <div class="col-lg m-3"><a href="/index.html"><img id="footer_icon" src="/home/img/icon.jpg" alt=""></a></div>
+                    <div id="footer_center" class="col-lg m-3">&#169 2022 Dambo. All Rights Reserved.</div>
+                    <div class="col-lg m-3">
+                      <div id="icon_container">
+                        <a href="/" class="social_icons--link" target="_blank">
+                          <i class="fa fa-facebook-official"></i>
+                        </a>
+                        <a href="/" class="social_icons--link" target="_blank">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="/" class="social_icons--link" target="_blank">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="/" class="social_icons--link" target="_blank">
+                          <i class="fa fa-youtube-play"></i>
+                        </a>
+                        <a href="/" class="social_icons--link" target="_blank">
+                          <i class="fa fa-linkedin-square"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
     </body>
 </html>
