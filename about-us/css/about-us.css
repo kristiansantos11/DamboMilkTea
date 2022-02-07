@@ -23,13 +23,11 @@
     color:white;
     margin: auto;
     padding-left: 100px;
-
 }
 
 #content-ab h1{
     font-family: 'proxima_nova_xbold';
     color:beige;
-    margin: auto;
 }
 
 #content-ab h3{
@@ -48,7 +46,8 @@
 
 @media screen and (max-width:1024px) {
     #content-ab{
-        padding-left: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
     }
 }
 
@@ -80,6 +79,7 @@ html, body {
 
 #map h3{
     text-align: right;
+    font-family: 'proxima_nova';
     color: #4BB050;
 }
 

@@ -40,6 +40,7 @@ body {
   font-weight: 800;
   font-size: 2rem;
   line-height: 3.625rem;
+  text-shadow: 2px 2px 2px black;
 }
 
 #content1_header_line2,
@@ -49,6 +50,7 @@ body {
   font-size: 6rem;
   line-height: 6.25rem;
   color: #ffff;
+  text-shadow: 2px 2px 2px black;
 }
 
 .header_container1 {
