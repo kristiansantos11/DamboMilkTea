@@ -1,3 +1,7 @@
+body{
+    font-family: 'proxima_nova'
+}
+
 /* about header */
 
 #main_container{
@@ -99,6 +103,7 @@ html, body {
 
 #testimonial{
     background-color: #4BB050;
+    color: beige;
 }
 
 #testimonial h1{
@@ -141,6 +146,7 @@ html, body {
     background: beige;
     padding: 30px;
 }
+
 .testimonial img{
     width: 100px;
     height: 100px;

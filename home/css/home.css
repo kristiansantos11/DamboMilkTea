@@ -190,7 +190,7 @@ body {
 #content4_details_line1,
 #content4_details_line2,
 #content4_details_line3 {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova Bold";
   font-size: 2rem;
   line-height: 42px;
   text-align: start;
@@ -209,11 +209,14 @@ body {
 
 #learn_more_button {
   background-color: #339e3d;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #fff;
   border: none;
   outline: none;
   border-radius: 1.5rem;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova Bold";
+  font-size: 20px;
 }
 
 .content4_img_container {
@@ -401,29 +404,29 @@ footer {
 
 @media screen and (max-width: 990px) {
   .content4_left_container {
-    padding-top: 1rem;
+    padding-top: 4rem;
     padding-left: 1rem;
   }
   #content4_header_line1 {
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 4rem;
   }
   #content4_header_line2 {
     font-weight: bold;
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   #DAMBO {
     color: #339e3d;
-    font-size: 9rem;
+    font-size: 5rem;
   }
 
   #content4_header_line3 {
     font-weight: bold;
-    font-size: 9rem;
+    font-size: 6rem;
     color: #339e3d;
-    line-height: 7rem;
+    line-height: 5rem;
   }
 
   #content4_details_line1,
@@ -456,13 +459,19 @@ footer {
 }
 
 @media screen and (max-width: 876px) {
+  #content3_main_container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   #content4_header_line1 {
+    padding-top: 50px;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   #content4_header_line2 {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 7rem;
   }
 
@@ -614,6 +623,7 @@ footer {
     font-size: 5rem;
     line-height: 5rem;
   }
+
 
   #content4_img {
     height: 60%;
