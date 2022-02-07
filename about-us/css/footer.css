@@ -1,6 +1,3 @@
-/*Content 2*/
-
-/*Footer*/
 footer {
     background-color: #f5f5f5f5;
   }
@@ -8,10 +5,10 @@ footer {
   #footer_icon {
     width: 8rem;
     background-clip: inherit;
+    float: right;
+    align-items: center;
   }
   
-  /*di ko alam kung bakit pero kapag walang naka-set na height sa icon_container ayaw ma-center ng mga nasa loob
-  siguro dahil yon sa display flex?*/
   #icon_container {
     display: flex;
     justify-content: space-evenly;
@@ -35,33 +32,29 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+    text-align: center;
   }
   
   /*for Responsiveness*/
-  @media screen and (max-width: 510px) {
-    #header_firstline {
-      font-size: 3.5rem;
+  
+  @media screen and (max-width: 1999px) {
+    #content1_header_line1 {
+      font-size: 2rem;
     }
   
-    #header_secondline {
-      font-size: 3.5rem;
+    #content1_header_line2,
+    #content1_header_line3,
+    #content1_header_line4 {
+      font-size: 6rem;
     }
-  
-    #header_thirdline {
-      font-size: 3.5rem;
-    }
-  
-    #DAMBO,
-    #MILKTEA {
-      font-size: 4rem;
-    }
-  
-    .details_container {
-      width: 24rem;
-    }
-  
-    #details_paragraph {
-      font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #footer_icon{
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   
