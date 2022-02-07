@@ -167,14 +167,14 @@ body {
 #content4_header_line2 {
   font-family: "Proxima Nova Extra Bold";
   font-size: 4rem;
-  line-height: 4rem;
+  line-height: 2.5rem;
 }
 
 #content4_header_line3 {
   font-family: "Proxima Nova Extra Bold";
   font-size: 4.5rem;
   color: #339e3d;
-  line-height: 6rem;
+  line-height: 4rem;
 }
 
 #DAMBO {
@@ -249,8 +249,8 @@ body {
 }
 
 /*Footer part*/
-footer {
-  background-color: #f5f5f5f5;
+#footer_main_container {
+  background-color: white;
 }
 
 #footer_icon {
@@ -459,7 +459,7 @@ footer {
 }
 
 @media screen and (max-width: 876px) {
-  #content3_main_container{
+  #content3_main_container {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -472,7 +472,7 @@ footer {
   #content4_header_line2 {
     font-weight: bold;
     font-size: 4rem;
-    line-height: 7rem;
+    line-height: 5rem;
   }
 
   #DAMBO {
@@ -484,7 +484,7 @@ footer {
     font-weight: bold;
     font-size: 7rem;
     color: #339e3d;
-    line-height: 7rem;
+    line-height: 4rem;
   }
 
   #content4_details_line1,
@@ -623,7 +623,6 @@ footer {
     font-size: 5rem;
     line-height: 5rem;
   }
-
 
   #content4_img {
     height: 60%;
