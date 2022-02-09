@@ -1,3 +1,5 @@
+/* about header */
+
 #main_container{
     padding-top:66px;
     background-color: beige;
@@ -8,33 +10,31 @@
 }
 
 #milktea img{
-    width: 100%;
-    height: 100%;
-    min-height: 450px;
-    max-height: 450px;
-    object-fit: contain;
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
-#context{
+/* about section */
+
+#content-ab{
     font-family: 'proxima_nova';
     color:white;
-    padding-left: 75px;
     margin: auto;
+    padding-left: 100px;
+
 }
 
-#context h1{
+#content-ab h1{
     font-family: 'proxima_nova_xbold';
-    font-size: 80px;
     color:beige;
     margin: auto;
 }
 
-#context p{
-    font-size: 25px;
+#content-ab h3{
     color:beige;
-
 }
-
 
 #mt-ab{
     width: 40%;
@@ -42,14 +42,17 @@
 }
 
 #mt-ab img{
-    width: fit-content;
-    height: fit-content;
-    min-height: 453px;
-    max-height: 453px;
-    object-fit: contain;
-    margin: auto;
-    display: block;
+    width: 453px;
+    padding-bottom: 5px;
 }
+
+@media screen and (max-width:1024px) {
+    #content-ab{
+        padding-left: 15px;
+    }
+}
+
+/* location section */
 
 #map{
     width: 100%;
@@ -62,7 +65,6 @@
 html, body {
     height: 100%;
     background: beige;
-
 }
 
 .fill { 
@@ -73,79 +75,102 @@ html, body {
 #map h1{
     text-align: right;
     color: #4BB050;
-    font-size: 80px;
     font-family: 'proxima_nova_xbold';
-    padding-top: 30px;
 }
 
-#map p{
+#map h3{
     text-align: right;
     color: #4BB050;
-    font-size: 25px;
 }
 
 #map small{
     font-size: 18px;
 }
 
+#location-ab img{
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    max-height: 700px;
+}
 
-#testimony{
+/*testimonial section */
+
+#testimonial{
     background-color: #4BB050;
 }
 
-#testimony h1{
+#testimonial h1{
     text-align: center;
     color: beige;
-    font-size: 80px;
     font-family: 'proxima_nova_xbold';
 }
 
-#testimony p{
+#testimonial p{
     text-align: center;
-    color: beige;
-    font-size: 25px;
+    color: #6ab04c ;
 }
 
-#location-ab img{
-    width: fit-content;
-    height: fit-content;
-    min-height: 650px;
-    max-height: 650px;
-    object-fit: contain;
-    background-size: cover;
+.testimonials{
+    padding: 40px 0;
+    background: #4BB050;
+    text-align: center;
+  }
+ 
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
 }
-#sub-testimony{
-    padding-top: 50px;
-    padding-bottom: 170px;
-
-}
-
-#test-a img{
-    width: 100%;
-    height: 100%;
-    min-height: 450px;
-    max-height: 450px;
-    object-fit: contain;
-    margin: auto;
-    padding-top: 25px;
+  
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-
-#test-b img{
-    width: 100%;
-    height: 100%;
-    min-height: 450px;
-    max-height: 450px;
-    object-fit: contain;
-    margin: auto;
-    padding-top: 25px;
-
-
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial{
+    background: beige;
+    padding: 30px;
+}
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: #6ab04c;
+}
+.stars{
+    color: #FBB900;
+    margin-bottom: 20px;
 }
 
-
-
-
+@media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+  
+@media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+  
 @font-face {
     font-family: 'proxima_nova';
     src: url('/_fonts_/proxima_nova/proxima_nova_regular-webfont.woff2') format('woff2'),

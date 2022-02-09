@@ -40,6 +40,7 @@ body {
   font-weight: 800;
   font-size: 2rem;
   line-height: 3.625rem;
+  text-shadow: 2px 2px 2px black;
 }
 
 #content1_header_line2,
@@ -49,6 +50,7 @@ body {
   font-size: 6rem;
   line-height: 6.25rem;
   color: #ffff;
+  text-shadow: 2px 2px 2px black;
 }
 
 .header_container1 {
@@ -165,14 +167,14 @@ body {
 #content4_header_line2 {
   font-family: "Proxima Nova Extra Bold";
   font-size: 4rem;
-  line-height: 4rem;
+  line-height: 2.5rem;
 }
 
 #content4_header_line3 {
   font-family: "Proxima Nova Extra Bold";
   font-size: 4.5rem;
   color: #339e3d;
-  line-height: 6rem;
+  line-height: 4rem;
 }
 
 #DAMBO {
@@ -188,7 +190,7 @@ body {
 #content4_details_line1,
 #content4_details_line2,
 #content4_details_line3 {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova Bold";
   font-size: 2rem;
   line-height: 42px;
   text-align: start;
@@ -207,11 +209,14 @@ body {
 
 #learn_more_button {
   background-color: #339e3d;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #fff;
   border: none;
   outline: none;
   border-radius: 1.5rem;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova Bold";
+  font-size: 20px;
 }
 
 .content4_img_container {
@@ -244,8 +249,8 @@ body {
 }
 
 /*Footer part*/
-footer {
-  background-color: #f5f5f5f5;
+#footer_main_container {
+  background-color: white;
 }
 
 #footer_icon {
@@ -399,29 +404,29 @@ footer {
 
 @media screen and (max-width: 990px) {
   .content4_left_container {
-    padding-top: 1rem;
+    padding-top: 4rem;
     padding-left: 1rem;
   }
   #content4_header_line1 {
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 4rem;
   }
   #content4_header_line2 {
     font-weight: bold;
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   #DAMBO {
     color: #339e3d;
-    font-size: 9rem;
+    font-size: 5rem;
   }
 
   #content4_header_line3 {
     font-weight: bold;
-    font-size: 9rem;
+    font-size: 6rem;
     color: #339e3d;
-    line-height: 7rem;
+    line-height: 5rem;
   }
 
   #content4_details_line1,
@@ -454,14 +459,20 @@ footer {
 }
 
 @media screen and (max-width: 876px) {
+  #content3_main_container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   #content4_header_line1 {
+    padding-top: 50px;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   #content4_header_line2 {
     font-weight: bold;
-    font-size: 5rem;
-    line-height: 7rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   #DAMBO {
@@ -473,7 +484,7 @@ footer {
     font-weight: bold;
     font-size: 7rem;
     color: #339e3d;
-    line-height: 7rem;
+    line-height: 4rem;
   }
 
   #content4_details_line1,
@@ -575,7 +586,7 @@ footer {
   #content4_details_line3 {
     font-weight: 300;
     font-size: 1.5rem;
-    line-height: 42px;
+    line-height: 2rem;
   }
 
   .content4_img_container {
@@ -664,7 +675,7 @@ footer {
   #content4_details_line3 {
     font-weight: 300;
     font-size: 1.1rem;
-    line-height: 42px;
+    line-height: 1.5rem;
   }
 
   #learn_more_button {
@@ -681,8 +692,38 @@ footer {
   #content1_header_line2,
   #content1_header_line3,
   #content1_header_line4 {
-    font-size: 3.5rem;
     line-height: 3.5rem;
+  }
+  /* #content4_header_line1 {
+    font-size: 1.9rem;
+  } */
+  #content4_header_line2 {
+    line-height: 2rem;
+  }
+
+  #content4_header_line3 {
+    line-height: 2.3rem;
+  }
+
+  #content4_details_line1,
+  #content4_details_line2,
+  #content4_details_line3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #content1_header_line1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #content1_header_line2,
+  #content1_header_line3,
+  #content1_header_line4 {
+    line-height: 3.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -694,27 +735,64 @@ footer {
   #footer_center {
     font-size: 1rem;
   }
-
-  #icon_container {
-  }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 420px) {
   #content1_header_line1 {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
   }
 
   #content1_header_line2,
   #content1_header_line3,
   #content1_header_line4 {
-    font-size: 3.3rem;
-    line-height: 3.5rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #content4_header_line1 {
+    font-size: 1.9rem;
+  }
+  #content4_header_line2 {
+    font-size: 1.9rem;
+    line-height: 1.5rem;
+  }
+
+  #DAMBO {
+    color: #339e3d;
+    font-size: 3rem;
+  }
+
+  #content4_header_line3 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  #content4_details_line1,
+  #content4_details_line2,
+  #content4_details_line3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #content1_header_line1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  #content1_header_line2,
+  #content1_header_line3,
+  #content1_header_line4 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 
 /*For Galaxy Fold phone*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   #content1_header_line1 {
     font-size: 0.8rem;
     line-height: 1rem;
@@ -747,11 +825,12 @@ footer {
   #content4_header_line1 {
     font-weight: bold;
     font-size: 1.5rem;
+    line-height: 2rem;
   }
   #content4_header_line2 {
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 3rem;
+    line-height: 1.3rem;
   }
 
   #DAMBO {
@@ -763,7 +842,7 @@ footer {
     font-weight: bold;
     font-size: 2.5rem;
     color: #339e3d;
-    line-height: 3rem;
+    line-height: 1.5rem;
   }
 
   #content4_details_line1,
@@ -771,7 +850,19 @@ footer {
   #content4_details_line3 {
     font-weight: 300;
     font-size: 0.8rem;
-    line-height: 42px;
+    line-height: 1rem;
+  }
+
+  .content4_details_container1 {
+    margin-top: 0.8rem;
+  }
+
+  .content4_details_container2 {
+    margin-top: 0.8rem;
+  }
+
+  .learn_more_button_container {
+    padding-top: 0rem;
   }
 
   #footer_center {
@@ -781,5 +872,9 @@ footer {
   #icon_container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  #learn_more_button {
+    font-size: 0.5rem;
   }
 }

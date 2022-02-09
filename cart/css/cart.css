@@ -151,10 +151,10 @@ body{
 #bg_for_mathbuttons{
     background: lightcoral;
     margin: auto;
-    padding: 0; 
     display: flex;
-    max-width: 255px;
-    width: 100%;
+    max-width: 500px;
+    width:250px;
+    padding: 0;
 }
 #add-button{
     background-color: #38753A;
@@ -165,8 +165,7 @@ body{
     font-size: 34px;
     font-family: 'proxima_nova_xbold';
     width: 55px;
-    margin-left: 98px;
-    
+    text-align: center;
 }
 
 #add-button:hover{
@@ -183,7 +182,6 @@ body{
     font-size: 34px;
     font-family: 'proxima_nova_xbold';
     width: 55px;
-    float: left;
 }
 #minus-button:hover{
     background-color: darkslategray;
@@ -196,38 +194,41 @@ body{
     font-size: 35px;
     font-family: 'proxima_nova_bold';
     pointer-events: none;
-    margin-left: 17px;
-    float: left;
     width: 120px;
+    height: 57px;
     max-width: 500px;
+    padding-left: 15px;
+    margin-right: 7px;
 }
 
 #avocado_checkbox_content{
     background-color: wheat;
-    max-width: 10%;
-    width: 60%;
-    margin-left: 80px;
-    margin-right: 80px;
+    max-width: 100%;
+    float: left;
     display: flex;
-    margin-top: 2px;
+    margin-right: 15px;
+    margin-left: 20px;
 }
 input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
     height: 50px;
-    max-width: 40%;
-    width: 100%;
+    max-width: 90%;
+    width: 25%;
     background-color: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 70px;
     align-items: center;
-    display: flex;
-    margin:auto;
+    display: block;
+    padding: 25px 25px 25px 25px;
+   
+    
 }
 #avocado_checkbox_style{
     display: none;
     align-items: center;
+    margin:auto;
+    
 }
 input[type="checkbox"]:after{
     font-family:"proxima_nova_bold";
@@ -239,17 +240,23 @@ input[type="checkbox"]:after{
     color:#38753A;
     justify-content: center;
     display:none;
+    
+    
+
 }
 input[type="checkbox"]:hover{
     background-color: yellow;
+    
 }
 input[type="checkbox"]:checked{
     background-color: orange;
     justify-content: center;
+    
 }
 input[type="checkbox"]:checked::after{
     display: flex;
     justify-content: center;
+    
 }
 @font-face {
     font-family: 'proxima_nova';
