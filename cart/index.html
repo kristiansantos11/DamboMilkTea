@@ -65,13 +65,13 @@
             <div class = "cart_layout">
                 <div class="row" id="cart_phrase">
                     <div class="col-auto">
-                        <img class="col position-relative" id="listicon1" src="img/listicon.png" >
+                        <img class="col position-relative order-1" id="listicon1" src="img/listicon.png" >
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 order-2">
                     <h1>Here's the list of your order!</h1>
                     <h2>You have 2 items in your order.</h2>
                     </div>
-                    <div class="col position-relative">  
+                    <div class="col position-relative order-3">  
                         <button id="manage-button" value='Show Layer' onclick="setVisibility('avocado_checkbox_style');";>Manage</button>
                         <script>
                             function setVisibility() {
@@ -80,10 +80,9 @@
                             document.getElementById('avocado_checkbox_style').style.display = 'none';
                             }else{
                             document.getElementById('manage-button').value = 'Hide Layer';
-                            document.getElementById('avocado_checkbox_style').style.display = 'block';
+                            document.getElementById('avocado_checkbox_style').style.display = 'flex';
                             }}
-                            
-                            </script>
+                        </script>
                     </div>
                 </div>
             </div>
@@ -92,30 +91,30 @@
         
         <div class="container-fluid position-relative" id="order_contents1">
             <div class="row">
-                <div class="col-sm-2" id="img_container1">
+                <div class="col-sm-2 order-first" id="img_container1">
                      <img id="img_avocado" src="img/avocado_img1.jpg">
                 </div>
-                <div class="col" id="avocado_order">
+                <div class="col-auto order-second" id="avocado_order">
                     <h1> Avocado Milk Tea </h1>
                     <p>Description goes here...</p>
                 </div>
                 
-                <div class="col-sm-1" id="bg_for_mathbuttons">
+                <div class="col-2 order-third" id="bg_for_mathbuttons">
                     
-                    <button id="add-button" onclick="increment()">+</button>
-                    <input id=math_blank type=number min=0 max=100></input>
-                    <button id="minus-button" onclick="decrement()">-</button>
+                    <div class="col-sm-2 order-first"><button id="minus-button" onclick="decrement()">-</button></div>
+                    <div class="col-sm-2 order-second"><input id=math_blank type=number min=0 max=100></input></div>
+                    <div class="col-sm-2 order-third"><button id="add-button" onclick="increment()">+</button></div>
                     <script>
-                        function increment() {
-                           document.getElementById('math_blank').stepUp();
-                        }
                         function decrement() {
                            document.getElementById('math_blank').stepDown();
+                        }
+                        function increment() {
+                           document.getElementById('math_blank').stepUp();
                         }
                      </script>
                 </div>
 
-                <div class="col-sm-1" id="avocado_checkbox_content"> 
+                <div class="col-2 order-fourth" id="avocado_checkbox_content"> 
                         <input type="checkbox" id="avocado_checkbox_style"/>
                 </div>
             </div>

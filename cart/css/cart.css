@@ -1,5 +1,9 @@
+body{
+    margin: 0;
+}
+
 .main_container{
-    max-width: 100%;
+    max-width: 1180px;
     max-height: 100%;
     min-height: 100%;
     
@@ -16,7 +20,7 @@
 }
 #listicon1{
     max-width: 100px;
-
+    width:100%;
 }
 #cart_phrase h1{
     
@@ -27,12 +31,17 @@
     letter-spacing: -2px;
     display: flex;
     margin-bottom: -2px;
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 #cart_phrase h2{
     font-family: 'proxima_nova_bold';
     font-size: 35px;
     color:black; 
     margin: auto;
+    float: left;
+    text-align: center;
 }
 
 #manage-button{
@@ -51,10 +60,9 @@
     padding-right: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-#manage-button:f{
-
+    width:100%;
+    float:right;
+    text-decoration: none;
 }
 #manage-button:hover{
     background-color: #0b5813;
@@ -73,7 +81,6 @@
     border-radius: 1rem;
     font-size: 25px;
     margin-bottom: 50px;
-    
 }
     
 #checkout-button:hover{
@@ -85,11 +92,13 @@
     background-color: #4CB050;
     padding-top: 30px;
     padding-bottom: 20px;
-    padding-left: 25px;
+    padding-left: 15px;
     margin-bottom: 30px;
     max-width: 80%;
     max-height:20%;
     border-radius: 2rem;
+    width: 100%;
+    height: 100%;
 }
 
 #img_container1{
@@ -98,7 +107,7 @@
     border-radius: 1rem;
     display: flex;
     margin:auto;
-    object-fit: cover;
+    width: 100%;
 }
 
 #img_avocado{
@@ -108,41 +117,44 @@
     border-radius: 1rem;
     display: flex;
     margin:auto;
-    
 }
 #order_contents2{
     background-color: #4CB050;
     padding-top: 200px;
-    padding-left: 25px;
+    padding-left: 15px;
     margin-bottom: 50px;
     max-width: 80%;
+    max-height:20%;
     border-radius: 2rem;
-    
+    width: 100%;
 }
 #avocado_order h1{
     font-family: 'proxima_nova_bold';
     font-size: 50px;
     color:white;
     margin-top: 50px;
-    margin-right: 61%;
     display: flex;
     background: gray;
+    text-align: center;
+    width: 100%;
 }
 #avocado_order p{
     font-family: 'proxima_nova';
     font-size: 30px;
     color:white;
-    margin-top: -10px;
-    margin-right: 50%;
-    padding-top: 10px;
     display: flex;
     background: pink;
+    width: 100%;
 }
 
 
 #bg_for_mathbuttons{
     background: lightcoral;
-
+    margin: auto;
+    padding: 0; 
+    display: flex;
+    max-width: 255px;
+    width: 100%;
 }
 #add-button{
     background-color: #38753A;
@@ -150,10 +162,17 @@
     border: 20%;
     border-radius: 1rem;
     border-color: #38753A;
-    font-size: 30px;
+    font-size: 34px;
     font-family: 'proxima_nova_xbold';
-    width: 50px;
-    max-height: 30%;
+    width: 55px;
+    margin-left: 98px;
+    
+}
+
+#add-button:hover{
+    background-color: darkslategray;
+    border-color: darkslategray;
+    transition: 0.2s;
 }
 #minus-button{
     background-color: #38753A;
@@ -161,51 +180,64 @@
     border: 20%;
     border-radius: 1rem;
     border-color: #38753A;
-    font-size: 30px;
+    font-size: 34px;
     font-family: 'proxima_nova_xbold';
-    width: 50px;
-    max-height: 30%;
+    width: 55px;
+    float: left;
+}
+#minus-button:hover{
+    background-color: darkslategray;
+    border-color: darkslategray;
+    transition: 0.2s;
 }
 #math_blank{
-    width: 20%;
-    height: 16%;
-    margin-top: 22%;
     border:none;
     text-align: center;
-    font-size: 20px;
+    font-size: 35px;
     font-family: 'proxima_nova_bold';
-    padding-left: 3%;
+    pointer-events: none;
+    margin-left: 17px;
+    float: left;
+    width: 120px;
+    max-width: 500px;
 }
 
 #avocado_checkbox_content{
     background-color: wheat;
-    
-    
+    max-width: 10%;
+    width: 60%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    margin-top: 2px;
 }
 input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
     height: 50px;
-    width: 50px;
+    max-width: 40%;
+    width: 100%;
     background-color: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 50px;
-    display:flex;
+    margin-top: 70px;
     align-items: center;
-    display: none;
+    display: flex;
+    margin:auto;
 }
 #avocado_checkbox_style{
     display: none;
+    align-items: center;
 }
 input[type="checkbox"]:after{
     font-family:"proxima_nova_bold";
     content: "\2713";
     font-weight: 900;
     font-size: 50px;
-    margin-left: 6px;
+    margin-left: 2px;
     margin-top: 6px;
     color:#38753A;
+    justify-content: center;
     display:none;
 }
 input[type="checkbox"]:hover{
@@ -213,9 +245,11 @@ input[type="checkbox"]:hover{
 }
 input[type="checkbox"]:checked{
     background-color: orange;
+    justify-content: center;
 }
 input[type="checkbox"]:checked::after{
     display: flex;
+    justify-content: center;
 }
 @font-face {
     font-family: 'proxima_nova';
