@@ -67,22 +67,48 @@
                     <div class="col-auto">
                         <img class="col position-relative order-1" id="listicon1" src="img/listicon.png" >
                     </div>
-                    <div class="col-6 order-2">
+                    <div class="col-xl-5 order-2">
                     <h1>Here's the list of your order!</h1>
                     <h2>You have 2 items in your order.</h2>
                     </div>
-                    <div class="col position-relative order-3">  
-                        <button id="manage-button" value='Show Layer' onclick="setVisibility1();" ;>Manage</button>
+                    <div class="col position-relative order-3">
+                        <button id="delete-button" onclick="Deletethis(); ";
+                        >Delete</button>
+                        <script>
+                            function Deletethis(){
+                                var avocado1 = document.getElementById("avocado_checkbox_style");
+                                var avocado_content = document.getElementById("order_contents1")
+                                var strawberry1 = document.getElementById("strawberry_checkbox_style");
+                                var strawberry_content = document.getElementById("order_contents2")
+
+                                if(avocado1.checked==true){
+                                    avocado_content.remove();
+                                }
+                                if(strawberry1.checked==true){
+                                    strawberry_content.remove();
+                                }}
+                        </script>
+
+                    </div>
+                    <div class="col-auto position-relative order-4">
+                        <button id="manage-button" value='Show Layer' onclick="setVisibility1();" ;
+                        >Manage</button>
                         <script>
                             function setVisibility1() {
                             if(document.getElementById('manage-button').value=='Hide Layer'){
                             document.getElementById('manage-button').value = 'Show Layer';
                             document.getElementById('avocado_checkbox_style').style.display = 'none';
                             document.getElementById('strawberry_checkbox_style').style.display = 'none';
+                            document.getElementById('delete-button').style.display = 'none';
+                            document.getElementById('manage-button').textContent = "Manage";
+                            document.getElementById('avocado_checkbox_style').checked=false;
+
                             }else{
                             document.getElementById('manage-button').value = 'Hide Layer';
                             document.getElementById('avocado_checkbox_style').style.display = 'flex';
                             document.getElementById('strawberry_checkbox_style').style.display = 'flex';
+                            document.getElementById('delete-button').style.display = 'block';
+                            document.getElementById('manage-button').textContent = "Cancel";
                             }}
                         </script>
                     </div>
@@ -93,15 +119,15 @@
         
         <div class="container-fluid" id="order_contents1">
             <div class="row">
-                <div class="col-sm-2" id="img_container1">
+                <div class="col-sm-4" id="img_container1">
                      <img id="img_avocado" src="img/avocado_img1.jpg">
                 </div>
-                <div class="col-auto" id="avocado_order">
+                <div class="col-lg-5" id="avocado_order">
                     <h1> Avocado Milk Tea </h1>
                     <p>Description goes here...</p>
                 </div>
                 
-                <div class="col-2 position-relative" id="bg_for_mathbuttons1">
+                <div class="col-2" id="bg_for_mathbuttons1">
                     
                     <div class="col"><button id="minus-button1" onclick="decrement1()">-</button></div>
                     <div class="col"><input id=math_blank1 type=number min=0 max=100></input></div>
@@ -116,7 +142,7 @@
                      </script>
                 </div>
 
-                <div class="col-2 order-fourth" id="avocado_checkbox_content"> 
+                <div class="col-1 order-fourth" id="avocado_checkbox_content"> 
                         <input type="checkbox" id="avocado_checkbox_style"/>
                 </div>
             </div>
@@ -125,11 +151,11 @@
         
         <div class="container-fluid" id="order_contents2">
             <div class="row">
-                <div class="col-sm-2" id="img_container2">
+                <div class="col-sm-4" id="img_container2">
                     <img id="img_strawberry" src="img/strawberry_img1.jpg">
                 </div>
                 
-                <div class="col-auto" id="strawberry_order">
+                <div class="col-lg-5" id="strawberry_order">
                     <h1> Strawberry Milk Tea </h1>
                     <p>Description goes here...</p>
                 </div>
@@ -148,7 +174,7 @@
                     </script>
                 </div>
    
-                <div class="col-2 order-fourth" id="strawberry_checkbox_content"> 
+                <div class="col-1 order-fourth" id="strawberry_checkbox_content"> 
                     <input type="checkbox" id="strawberry_checkbox_style"/>
                 </div>
             </div>

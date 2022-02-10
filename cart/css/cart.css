@@ -11,21 +11,22 @@ body{
 
 .cart_layout{
     padding-top: 100px;
-    padding-left: 25px;
-    max-width: 100%;
+    max-width: 80%;
     margin-bottom: 1%;
-    margin-left: 8%;
-    margin-right: 10%;
+    margin-left: 14%;
+    margin-right: 15%;
     margin-top: 30px;
 }
 #listicon1{
     max-width: 100px;
     width:100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #cart_phrase h1{
     
     font-family: 'proxima_nova_xbold';
-    font-size: 50px;
+    font-size: 45px;
     color:black;
     max-width: fit-content;
     letter-spacing: -2px;
@@ -34,14 +35,20 @@ body{
     width: 100%;
     float: left;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:auto;
 }
 #cart_phrase h2{
     font-family: 'proxima_nova_bold';
-    font-size: 35px;
+    font-size: 30px;
     color:black; 
     margin: auto;
     float: left;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
 
 #manage-button{
@@ -55,27 +62,53 @@ body{
     max-width: fit-content;
     margin-top: 50px;
     margin-bottom: 10px;
-    margin-left: 78%;
-    padding-left: 18px;
-    padding-right: 18px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     width:100%;
     float:right;
     text-decoration: none;
+    display: block;
 }
 #manage-button:hover{
     background-color: #0b5813;
     transition: 0.5s;
 }
+#delete-button{
+    background-color: #B40000;
+    color: #fff;
+    border: 1rem;
+    border-radius: 1.5rem;
+    border-color: #B40000;
+    font-size: 29px;
+    font-family: 'proxima_nova_bold';
+    max-width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:100%;
+    text-decoration: none;
+    display: none;
+    float: right;
+}
 
+#delete-button:hover{
+    background-color: #630505;
+    transition: 0.5s;
+}
 #order_contents1{
     background-color: #4CB050;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
     margin-bottom: 30px;
-    max-width: 80%;
+    max-width: 70%;
     max-height:20%;
     border-radius: 2rem;
     width: 100%;
@@ -89,6 +122,8 @@ body{
     display: flex;
     margin:auto;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 #img_avocado{
@@ -101,22 +136,26 @@ body{
 }
 #avocado_order h1{
     font-family: 'proxima_nova_bold';
-    font-size: 50px;
+    font-size: 45px;
     color:white;
     margin-top: 50px;
     display: flex;
-    text-align: center;
     width: 100%;
-    margin-right: 30px;
-
+    padding-left: 50px;
+    padding-right: 40px;
+    float: left;
+    text-align: center;
 }
 #avocado_order p{
     font-family: 'proxima_nova';
-    font-size: 30px;
+    font-size: 25px;
     color:white;
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 25px;
+    float: left;
 }
 
 
@@ -125,13 +164,14 @@ body{
     display: flex;
     max-width: 500px;
     width:250px;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
     float: right;
+    
 }
 #add-button1{
     background-color: #38753A;
     color: #fff;
-    border: 20%;
     border-radius: 1rem;
     border-color: #38753A;
     font-size: 34px;
@@ -148,7 +188,6 @@ body{
 #minus-button1{
     background-color: #38753A;
     color: #fff;
-    border: 20%;
     border-radius: 1rem;
     border-color: #38753A;
     font-size: 34px;
@@ -166,20 +205,23 @@ body{
     font-size: 35px;
     font-family: 'proxima_nova_bold';
     pointer-events: none;
-    width: 120px;
-    height: 57px;
+    width: 100px;
+    height: 56px;
     max-width: 500px;
     padding-left: 15px;
     margin-right: 6px;
+    position:relative;
 }
 
 #avocado_checkbox_content{
     max-width: 100%;
-    float: right;
     display: flex;
-    margin-right: 20px;
-    margin-left: 20px;
-    
+    margin:auto;
+    padding-top: 20px;
+    padding-right: 80px;
+    position:relative;
+    max-height: 20%;
+    height: 20%;
 }
 input[type="checkbox"]{
     appearance: none;
@@ -201,6 +243,7 @@ input[type="checkbox"]{
     display: none;
     align-items: center;
     margin:auto;
+    
 }
 input[type="checkbox"]:after{
     font-family:"proxima_nova_bold";
@@ -212,6 +255,7 @@ input[type="checkbox"]:after{
     color:#38753A;
     justify-content: center;
     display:none;
+
 }
 input[type="checkbox"]:hover{
     background-color: yellow;
@@ -230,14 +274,15 @@ input[type="checkbox"]:checked::after{
 #order_contents2{
     background-color: #4CB050;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 1px;
+    padding-right: 1px;
     padding-bottom: 30px;
     margin-bottom: 50px;
     border-radius: 2rem;
     width: 100%;
-    max-width: 80%;
-    max-height:20%;
     height: 100%;
+    max-width: 70%;
+    max-height:20%;
 }
 
 #img_container2{
@@ -247,7 +292,8 @@ input[type="checkbox"]:checked::after{
     display: flex;
     margin:auto;
     width: 100%;
-    padding-left: 7px;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 #img_strawberry{
@@ -260,20 +306,27 @@ input[type="checkbox"]:checked::after{
 }
 #strawberry_order h1{
     font-family: 'proxima_nova_bold';
-    font-size: 50px;
+    font-size: 45px;
     color:white;
     margin-top: 50px;
     display: flex;
     text-align: center;
     width: 100%;
+    padding-left: 50px;
+    padding-right: 40px;
+    float: left;
+    text-align: center;
 }
 #strawberry_order p{
     font-family: 'proxima_nova';
-    font-size: 30px;
+    font-size: 25px;
     color:white;
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 25px;
+    float: left;
 }
 
 
@@ -282,12 +335,13 @@ input[type="checkbox"]:checked::after{
     display: flex;
     max-width: 500px;
     width:250px;
+    padding-left: 30px;
+    padding-top: 20px;
     float: right;
 }
 #add-button2{
     background-color: #38753A;
     color: #fff;
-    border: 20%;
     border-radius: 1rem;
     border-color: #38753A;
     font-size: 34px;
@@ -304,7 +358,6 @@ input[type="checkbox"]:checked::after{
 #minus-button2{
     background-color: #38753A;
     color: #fff;
-    border: 20%;
     border-radius: 1rem;
     border-color: #38753A;
     font-size: 34px;
@@ -322,19 +375,23 @@ input[type="checkbox"]:checked::after{
     font-size: 35px;
     font-family: 'proxima_nova_bold';
     pointer-events: none;
-    width: 120px;
-    height: 57px;
+    width: 100px;
+    height: 56px;
     max-width: 500px;
     padding-left: 15px;
     margin-right: 6px;
+    position:relative;
 }
 
 #strawberry_checkbox_content{
     max-width: 100%;
-    float: right;
     display: flex;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin:auto;
+    padding-top: 20px;
+    padding-right: 80px;
+    position:relative;
+    max-height: 20%;
+    height: 20%;
     
 }
 input[type="checkbox"]{
