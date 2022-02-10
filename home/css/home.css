@@ -70,7 +70,8 @@ body {
 /*Content 2 part*/
 .content2_container {
   background-color: #f0ff47;
-  height: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,7 +191,7 @@ body {
 #content4_details_line1,
 #content4_details_line2,
 #content4_details_line3 {
-  font-family: "Proxima Nova Bold";
+  font-family: "Proxima Nova";
   font-size: 2rem;
   line-height: 42px;
   text-align: start;
@@ -242,6 +243,10 @@ body {
 #content4_img {
   width: fit-content;
   height: fit-content;
+}
+
+#FOR_FREE{
+  font-family: "Proxima Nova Extra Bold";
 }
 
 #content4_img:hover {
@@ -328,7 +333,7 @@ body {
   }
 
   #content2_header {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .content4_left_container {
@@ -517,7 +522,7 @@ body {
   .content2_container {
     height: fit-content;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   #content2_header {
