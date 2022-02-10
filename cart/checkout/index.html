@@ -14,7 +14,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <title>Dambo Milk Tea</title>
-	    <link rel="icon" href="home/img/webicon.ico" type="image/x-icon">
+	    <link rel="icon" href="home/img/webicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/cart/checkout/css/checkout.css" />
 
     </head>
 
@@ -25,7 +26,7 @@
 
             <div class="logo">
                 <a class="navbar-brand mx-2" href="#">
-                    <img src="../home/img/webicon.png" alt="Logo">
+                    <img src="/home/img/webicon.png" alt="Logo">
                 </a>
             </div>
 
@@ -33,29 +34,41 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <!-- Links -->
                 <ul class="navbar-nav ms-auto mt-2 mt-sm-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="" id="navbar-element">Home</a>
+                        <a class="nav-link" aria-current="page" href="/index.html" id="navbar-element">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="/members" id="navbar-element">Menu</a>
+                        <a class="nav-link" href="/menu/index.html" id="navbar-element">Menu</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="http://iancraft.apexmc.co:8888/index.html" id="navbar-element">About Us</a>
+                        <a class="nav-link" href="/about-us/index.html" id="navbar-element">About Us</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#" id="navbar-element">Contact Us</a>
+                        <a class="nav-link active" href="/contact-us/index.html" id="navbar-element">Contact Us</a>
                     </li>
                 </ul>
-            </div>
 
-            <a class="btn btn-outline-success mr-sm-2 my-2 mx-2 my-sm-0 inline" href="/cart/index.html" id="shopping_cart">
-                <span class="material-icons my-1">shopping_cart</span>
-            </a>
+                <a class="btn btn-outline-success mr-sm-2 my-2 mx-2 my-sm-0 inline" href="/cart/index.html" id="shopping_cart">
+                    <span class="material-icons my-1">shopping_cart</span>
+                </a>
+            </div>
+            
         </nav>
 
         <!-- Rest of the body goes here -->
+        <div class="container-fluid" id="main_container">
+            <div class="row">
+                <div class="col p-2" id="left_container">
+
+                </div>
+                <div class="col p-2" id="right_container">
+
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>

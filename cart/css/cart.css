@@ -17,6 +17,7 @@ body{
     margin-right: 15%;
     margin-top: 30px;
 }
+
 #listicon1{
     max-width: 100px;
     width:100%;
@@ -39,6 +40,7 @@ body{
     padding-right: 10px;
     margin:auto;
 }
+
 #cart_phrase h2{
     font-family: 'proxima_nova_bold';
     font-size: 30px;
@@ -72,6 +74,7 @@ body{
     text-decoration: none;
     display: block;
 }
+
 #manage-button:hover{
     background-color: #0b5813;
     transition: 0.5s;
@@ -146,6 +149,7 @@ body{
     float: left;
     text-align: center;
 }
+
 #avocado_order p{
     font-family: 'proxima_nova';
     font-size: 25px;
@@ -169,6 +173,7 @@ body{
     float: right;
     
 }
+
 #add-button1{
     background-color: #38753A;
     color: #fff;
@@ -194,13 +199,15 @@ body{
     font-family: 'proxima_nova_xbold';
     width: 55px;
 }
+
 #minus-button1:hover{
     background-color: darkslategray;
     border-color: darkslategray;
     transition: 0.2s;
 }
 #math_blank1{
-    border:none;
+    border: none;
+    border-radius: 20px;
     text-align: center;
     font-size: 35px;
     font-family: 'proxima_nova_bold';
@@ -371,6 +378,7 @@ input[type="checkbox"]:checked::after{
 }
 #math_blank2{
     border:none;
+    border-radius: 20px;
     text-align: center;
     font-size: 35px;
     font-family: 'proxima_nova_bold';

@@ -70,7 +70,8 @@ body {
 /*Content 2 part*/
 .content2_container {
   background-color: #f0ff47;
-  height: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +113,7 @@ body {
 #content3_main_img_container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -119,11 +121,11 @@ body {
 #content3_img2_container,
 #content3_img3_container,
 #content3_img4_container {
-  border-radius: 1.938rem;
+  border-radius: 1rem;
   /* width: 16rem;
   height: 12rem; */
-  width: 16rem;
-  height: 12rem;
+  width: 20%;
+  height: 15%;
   background-size: auto;
   margin: 0;
   padding: 0;
@@ -172,14 +174,14 @@ body {
 
 #content4_header_line3 {
   font-family: "Proxima Nova Extra Bold";
-  font-size: 4.5rem;
+  font-size: 5rem;
   color: #339e3d;
   line-height: 4rem;
 }
 
 #DAMBO {
   color: #339e3d;
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
 
 .content4_details_container1 {
@@ -190,8 +192,8 @@ body {
 #content4_details_line1,
 #content4_details_line2,
 #content4_details_line3 {
-  font-family: "Proxima Nova Bold";
-  font-size: 2rem;
+  font-family: "Proxima Nova";
+  font-size: 1.5rem;
   line-height: 42px;
   text-align: start;
 }
@@ -242,6 +244,10 @@ body {
 #content4_img {
   width: fit-content;
   height: fit-content;
+}
+
+#FOR_FREE {
+  font-family: "Proxima Nova Extra Bold";
 }
 
 #content4_img:hover {
@@ -328,7 +334,7 @@ body {
   }
 
   #content2_header {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .content4_left_container {
@@ -383,12 +389,12 @@ body {
 
   #DAMBO {
     color: #339e3d;
-    font-size: 9rem;
+    font-size: 8rem;
   }
 
   #content4_header_line3 {
     font-weight: bold;
-    font-size: 9rem;
+    font-size: 8rem;
     color: #339e3d;
     line-height: 7rem;
   }
@@ -414,7 +420,7 @@ body {
   #content4_header_line2 {
     font-weight: bold;
     font-size: 4rem;
-    line-height: 5rem;
+    line-height: 3rem;
   }
 
   #DAMBO {
@@ -424,7 +430,7 @@ body {
 
   #content4_header_line3 {
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #339e3d;
     line-height: 5rem;
   }
@@ -433,7 +439,7 @@ body {
   #content4_details_line2,
   #content4_details_line3 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 42px;
   }
 
@@ -472,17 +478,17 @@ body {
   #content4_header_line2 {
     font-weight: bold;
     font-size: 4rem;
-    line-height: 5rem;
+    line-height: 3rem;
   }
 
   #DAMBO {
     color: #339e3d;
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   #content4_header_line3 {
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 5rem;
     color: #339e3d;
     line-height: 4rem;
   }
@@ -491,7 +497,7 @@ body {
   #content4_details_line2,
   #content4_details_line3 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 42px;
   }
 }
@@ -517,7 +523,7 @@ body {
   .content2_container {
     height: fit-content;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   #content2_header {
@@ -542,11 +548,15 @@ body {
     line-height: 1rem;
   }
 
+  #content3_main_img_container {
+    gap: 1rem;
+  }
+
   #content3_img1_container,
   #content3_img2_container,
   #content3_img3_container,
   #content3_img4_container {
-    margin: 1rem;
+    margin: 0;
   }
 
   .content4_left_container {
@@ -747,6 +757,33 @@ body {
   #content1_header_line4 {
     font-size: 3.5rem;
   }
+
+  #content4_header_line1 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  #content4_header_line2 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+
+  #DAMBO {
+    font-size: 3rem;
+  }
+
+  #content4_header_line3 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #339e3d;
+  }
+
+  #content4_details_line1,
+  #content4_details_line2,
+  #content4_details_line3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -760,12 +797,12 @@ body {
 
   #DAMBO {
     color: #339e3d;
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
   #content4_header_line3 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.9rem;
     line-height: 2rem;
   }
 

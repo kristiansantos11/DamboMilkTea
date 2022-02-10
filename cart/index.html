@@ -17,8 +17,6 @@
 	    <link rel="icon" href="home/img/webicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/cart.css"/>
         <link rel="stylesheet" href="css/footer.css"/>
-        
-
     </head>
 
     <body>
@@ -28,7 +26,7 @@
 
             <div class="logo">
                 <a class="navbar-brand mx-2" href="#">
-                    <img src="../home/img/webicon.png" alt="Logo">
+                    <img src="/home/img/webicon.png" alt="Logo">
                 </a>
             </div>
 
@@ -36,7 +34,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <!-- Links -->
                 <ul class="navbar-nav ms-auto mt-2 mt-sm-0">
                     <li class="nav-item mx-2">
@@ -46,17 +44,18 @@
                         <a class="nav-link" href="/menu/index.html" id="navbar-element">Menu</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="http://iancraft.apexmc.co:8888/index.html" id="navbar-element">About Us</a>
+                        <a class="nav-link" href="/about-us/index.html" id="navbar-element">About Us</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#" id="navbar-element">Contact Us</a>
+                        <a class="nav-link active" href="/contact-us/index.html" id="navbar-element">Contact Us</a>
                     </li>
                 </ul>
-            </div>
 
-            <a class="btn btn-outline-success mr-sm-2 my-2 mx-2 my-sm-0 inline" href="/cart/index.html" id="shopping_cart">
-                <span class="material-icons my-1">shopping_cart</span>
-            </a>
+                <a class="btn btn-outline-success mr-sm-2 my-2 mx-2 my-sm-0 inline" href="/cart/index.html" id="shopping_cart">
+                    <span class="material-icons my-1">shopping_cart</span>
+                </a>
+            </div>
+            
         </nav>
 
         <!-- Rest of the body goes here -->
@@ -130,7 +129,7 @@
                 <div class="col-2" id="bg_for_mathbuttons1">
                     
                     <div class="col"><button id="minus-button1" onclick="decrement1()">-</button></div>
-                    <div class="col"><input id=math_blank1 type=number min=0 max=100></input></div>
+                    <div class="col mx-3"><input id=math_blank1 type=number min=0 max=100></input></div>
                     <div class="col"><button id="add-button1" onclick="increment1()">+</button></div>
                     <script>
                         function decrement1() {
@@ -162,7 +161,7 @@
                    
                 <div class="col-2" id="bg_for_mathbuttons2">
                     <div class="col"><button id="minus-button2" onclick="decrement2()">-</button></div>
-                    <div class="col"><input id=math_blank2 type=number min=0 max=100></input></div>
+                    <div class="col mx-3"><input id=math_blank2 type=number min=0 max=100></input></div>
                     <div class="col"><button id="add-button2" onclick="increment2()">+</button></div>
                     <script>
                     function decrement2() {
@@ -183,8 +182,8 @@
 
         <div class="container-fluid" id="checkout_button_container">
             <div class="row">
-                    <div class="col"><a href="#CHECKOUT_LINK" class="btn btn-secondary btn-lg" id="checkout-button">CHECKOUT</a>
-
+                    <div class="col">
+                        <a href="/cart/checkout/index.html" class="btn btn-secondary btn-lg" id="checkout-button">CHECKOUT</a>
                     </div>
             </div>
         </div>

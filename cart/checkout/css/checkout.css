@@ -1,0 +1,24 @@
+#main_container{
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#main_container p{
+    text-align: left;
+    line-height: 20pt;
+}
+
+#left_container {
+    background-color: lightcoral;
+}
+
+#right_container {
+    background-color: lightblue;
+}
+
+#img_here{
+    width: 128px;
+    height: 128px;
+}
