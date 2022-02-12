@@ -140,6 +140,7 @@ body {
 
 #content3_img:hover {
   transform: scale(1.1);
+  transition: 0.5s all ease;
 }
 
 /*Content 4 part*/
@@ -252,6 +253,7 @@ body {
 
 #content4_img:hover {
   transform: scale(1.1);
+  transition: 0.5s all ease;
 }
 
 /*Footer part*/
