@@ -85,6 +85,25 @@ body{
     display: grid;
     grid-template-columns: auto auto;
 }
+
+#fooditem1{
+    float: right;
+    opacity: 0;
+}
+
+#fooditem2{
+    float: right;
+    opacity: 0;
+}
+#fooditem3{
+    float: right;
+    opacity: 0;
+}
+#fooditem4{
+    float: right;
+    opacity: 0;
+}
+
 .details-sub>h5{
     font-weight: 600;
     font-size: 18px;
@@ -99,15 +118,32 @@ body{
     font-weight: 400;
     align-self: stretch;
 }
-.details>button{
+
+.buttonz{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+ 
+}
+.buttonz>button{
     background-color: #339e3d;
     border: none;
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
-    width: 180px;
+    width: 130px;
+    height: 40px;
+    margin-left: 10px;
+    align-self:center;
 }
+
+#cancel{
+    background: red;
+    opacity: 0;
+}
+
 
 .cart:hover{
     transform: scale(105%);
