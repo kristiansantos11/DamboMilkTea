@@ -251,10 +251,10 @@ body {
   font-family: "Proxima Nova Extra Bold";
 }
 
-#content4_img:hover {
+/* #content4_img:hover {
   transform: scale(1.1);
   transition: 0.5s all ease;
-}
+} */
 
 /*Footer part*/
 #footer_main_container {
