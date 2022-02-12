@@ -17,6 +17,9 @@
 	    <link rel="icon" href="home/img/webicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/cart.css"/>
         <link rel="stylesheet" href="css/footer.css"/>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
 
     <body>
@@ -47,11 +50,11 @@
                         <a class="nav-link" href="/about-us/index.html" id="navbar-element">About Us</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" href="/contact-us/index.html" id="navbar-element">Contact Us</a>
+                        <a class="nav-link" href="/contact-us/index.html" id="navbar-element">Contact Us</a>
                     </li>
                 </ul>
 
-                <a class="btn btn-outline-success mr-sm-2 my-2 mx-2 my-sm-0 inline" href="/cart/index.html" id="shopping_cart">
+                <a class="btn btn-outline-success mr-sm-2 my-2 mx-2 my-sm-0 inline active" href="/cart/index.html" id="shopping_cart">
                     <span class="material-icons my-1">shopping_cart</span>
                 </a>
             </div>
@@ -83,9 +86,12 @@
                                 if(avocado1.checked==true){
                                     avocado_content.remove();
                                 }
-                                if(strawberry1.checked==true){
+                                else if(strawberry1.checked==true){
                                     strawberry_content.remove();
-                                }}
+                                } else {
+                                    alert("You did not choose any item to remove.");
+                                }
+                            }
                         </script>
 
                     </div>
@@ -129,9 +135,10 @@
                 <div class="col-2" id="bg_for_mathbuttons1">
                     
                     <div class="col"><button id="minus-button1" onclick="decrement1()">-</button></div>
-                    <div class="col mx-3"><input id=math_blank1 type=number min=0 max=100></input></div>
+                    <div class="col mx-3"><input id=math_blank1 type=number min=1 max=100></input></div>
                     <div class="col"><button id="add-button1" onclick="increment1()">+</button></div>
                     <script>
+                        document.getElementById('math_blank1').defaultValue = "1";
                         function decrement1() {
                            document.getElementById('math_blank1').stepDown();
                         }
@@ -161,9 +168,10 @@
                    
                 <div class="col-2" id="bg_for_mathbuttons2">
                     <div class="col"><button id="minus-button2" onclick="decrement2()">-</button></div>
-                    <div class="col mx-3"><input id=math_blank2 type=number min=0 max=100></input></div>
+                    <div class="col mx-3"><input id=math_blank2 type=number min=1 max=100></input></div>
                     <div class="col"><button id="add-button2" onclick="increment2()">+</button></div>
                     <script>
+                    document.getElementById('math_blank2').defaultValue = "1"
                     function decrement2() {
                         document.getElementById('math_blank2').stepDown();
                         }
@@ -199,17 +207,6 @@
                         <a href="/" class="social_icons--link" target="_blank">
                           <i class="fa fa-facebook-official"></i>
                         </a>
-                        <a href="/" class="social_icons--link" target="_blank">
-                          <i class="fa fa-instagram"></i>
-                        </a>
-                        <a href="/" class="social_icons--link" target="_blank">
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="/" class="social_icons--link" target="_blank">
-                          <i class="fa fa-youtube-play"></i>
-                        </a>
-                        <a href="/" class="social_icons--link" target="_blank">
-                          <i class="fa fa-linkedin-square"></i>
                         </a>
                       </div>
                     </div>
