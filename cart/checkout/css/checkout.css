@@ -1,3 +1,81 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("/_fonts_/proxima_nova/proxima_nova_regular-webfont.woff");
+}
+
+@font-face {
+font-family: "Proxima Nova Bold";
+src: url("/_fonts_/proxima_nova/proxima_nova_bold-webfont.woff");
+}
+
+@font-face {
+font-family: "Proxima Nova Extra Bold";
+src: url("/_fonts_/proxima_nova/proxima_nova_extrabold-webfont.woff");
+}
+  
+
+body{
+    font-family: "Proxima Nova";
+}
+
+h1{
+    font-family: "Proxima Nova Extra Bold";
+    font-size: 4.5rem;
+}
+
+h2{
+    font-family: "Proxima Nova Bold";
+}
+
+textarea{
+    resize: none;
+}
+
+table{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+td{
+    background-color: white;
+    text-align: center;
+}
+
+#checkout_button{
+    font-family: "Proxima Nova Bold";
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: green;
+    border: 0px;
+}
+
+#order_details_row{
+    text-align: center;
+    border-radius: 20px;
+    background-color: lightgreen;
+    padding: 50px;
+}
+
+#checkout_row{
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+#qty{
+    width: 70px;
+    border: 1px solid;
+}
+
+#item_name{
+    border: 1px solid;
+}
+
 #main_container{
     margin-top: 80px;
     align-items: center;
@@ -11,14 +89,14 @@
 }
 
 #left_container {
-    background-color: lightcoral;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding: 50px;
+    margin: 30px;
 }
+
 
 #right_container {
-    background-color: lightblue;
-}
-
-#img_here{
-    width: 128px;
-    height: 128px;
+    margin: 30px;
+    border-radius: 20px;
 }

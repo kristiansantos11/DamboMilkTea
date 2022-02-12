@@ -61,11 +61,39 @@
         <!-- Rest of the body goes here -->
         <div class="container-fluid" id="main_container">
             <div class="row">
-                <div class="col p-2" id="left_container">
-
+                <div class="col" id="left_container">
+                    <h1>Checkout</h1>
+                    <p>Complete your Address and Contact details here so we can keep in touch while we prepare your order!</p>
+                    <h2>Name</h2>
+                    <textarea id="customer_name" name="customer_name" rows="1" cols="50"></textarea>
+                    <h2>Contact Number</h2>
+                    <textarea id="contact_number" name="contact_number" rows="1" cols="50"></textarea>
+                    <h2>Address</h2>
+                    <textarea id="address" name="address" rows="4" cols="50"></textarea>
                 </div>
-                <div class="col p-2" id="right_container">
-
+                <div class="col" id="right_container">
+                    <div class="row" id="order_details_row">
+                        <h1>Order Details</h1>
+                        <table>
+                            <tr>
+                                <td id="qty">Quantity</td>
+                                <td id="item_name">Name</td>
+                            </tr>
+                            <tr>
+                                <td>1 pc.</td>
+                                <td>Avocado Milk Tea</td>
+                            </tr>
+                            <tr>
+                                <td>1 pc.</td>
+                                <td>Strawberry Milk Tea</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row" id="checkout_row">
+                        <a>
+                            <button id="checkout_button">CHECKOUT</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
